@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Workshop-GIT</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Guía de Control de Versiones y GIT</h1>
+    </header>
+    <main>
+        <section id="control-de-versiones">
+            <h2>¿Qué es un control de versiones?</h2>
+            <p>Un sistema de control de versiones (VCS) es una herramienta que ayuda a gestionar los cambios en los archivos de un proyecto a lo largo del tiempo. Permite realizar un seguimiento de las modificaciones, revertir a versiones anteriores y colaborar con otros usuarios.</p>
+        </section>
+        <section id="git">
+            <h2>¿Qué es GIT?</h2>
+            <p>GIT es un sistema de control de versiones distribuido que permite a los desarrolladores gestionar el historial de cambios en el código fuente. Fue creado por Linus Torvalds en 2005 y es conocido por su rapidez y eficiencia en el manejo de proyectos grandes.</p>
+        </section>
+        <section id="repositorio">
+            <h2>¿Qué es un repositorio?</h2>
+            <p>Un repositorio es un espacio donde se almacena y gestiona el código fuente de un proyecto. Hay dos tipos principales:</p>
+            <ul>
+                <li><strong>Repositorio local:</strong> Es una copia del proyecto almacenada en el sistema de archivos de un usuario.</li>
+                <li><strong>Repositorio remoto:</strong> Es una versión del proyecto almacenada en un servidor remoto, accesible a través de Internet.</li>
+            </ul>
+        </section>
+        <section id="github">
+            <h2>¿Qué es GITHUB?</h2>
+            <p>GitHub es una plataforma de alojamiento de código basada en la web que utiliza Git para el control de versiones. Ofrece herramientas para la colaboración, la gestión de proyectos y el alojamiento de repositorios.</p>
+        </section>
+        <section id="ramas">
+            <h2>¿Qué es una rama en GIT y para qué sirve?</h2>
+            <p>Una rama en GIT es una línea de desarrollo independiente que permite trabajar en diferentes características o correcciones de un proyecto sin afectar la rama principal (generalmente llamada "main" o "master"). Las ramas facilitan la colaboración y el trabajo en paralelo.</p>
+        </section>
+        <section id="estados">
+            <h2>¿Cuáles son los estados en GIT?</h2>
+            <p>Los estados en GIT son:</p>
+            <ul>
+                <li><strong>Modificado:</strong> El archivo ha sido editado, pero no ha sido añadido al área de preparación.</li>
+                <li><strong>Preparado:</strong> El archivo está en el área de preparación y listo para ser incluido en el próximo commit.</li>
+                <li><strong>Confirmado:</strong> El archivo ha sido guardado en el historial de commits.</li>
+            </ul>
+        </section>
+        <section id="terminal">
+            <h2>¿Qué es la terminal, consola o línea de comandos y para qué sirve?</h2>
+            <p>La terminal o línea de comandos es una interfaz que permite a los usuarios interactuar con el sistema operativo mediante la entrada de comandos. Es útil para realizar tareas administrativas, ejecutar programas y gestionar archivos de manera eficiente.</p>
+        </section>
+        <section id="comandos">
+            <h2>Funcionamiento de comandos</h2>
+            <ul>
+                <li><strong>ls:</strong> Muestra una lista de archivos y directorios en el directorio actual.</li>
+                <li><strong>cd:</strong> Cambia el directorio actual.</li>
+                <li><strong>cd ..:</strong> Sube un nivel en la jerarquía de directorios.</li>
+                <li><strong>pwd:</strong> Muestra la ruta del directorio actual.</li>
+                <li><strong>mkdir:</strong> Crea un nuevo directorio.</li>
+                <li><strong>touch:</strong> Crea un nuevo archivo vacío o actualiza la fecha de modificación de un archivo existente.</li>
+                <li><strong>rm:</strong> Elimina archivos o directorios.</li>
+                <li><strong>cv:</strong> Comando ficticio para este ejemplo. Se utilizaría como <code>cv <nombre> <directorio></code>.</li>
+            </ul>
+        </section>
+        <section id="git-comandos">
+            <h2>Listado de comandos de GIT</h2>
+            <ul>
+                <li><strong>git init:</strong> Inicializa un nuevo repositorio Git.</li>
+                <li><strong>git clone:</strong> Clona un repositorio remoto.</li>
+                <li><strong>git add:</strong> Añade archivos al área de preparación.</li>
+                <li><strong>git commit:</strong> Guarda los cambios en el historial de commits.</li>
+                <li><strong>git push:</strong> Envía los commits al repositorio remoto.</li>
+                <li><strong>git pull:</strong> Recupera y fusiona los cambios del repositorio remoto.</li>
+                <li><strong>git branch:</strong> Muestra, crea o elimina ramas.</li>
+                <li><strong>git merge:</strong> Fusiona ramas.</li>
+                <li><strong>git status:</strong> Muestra el estado de los archivos en el repositorio.</li>
+            </ul>
+        </section>
+        <section id="aplicar-git">
+            <h2>Aplicar GIT en este documento Web</h2>
+            <p>Para aplicar GIT en este documento web, sigue estos pasos:</p>
+            <ol>
+                <li>Inicializa un nuevo repositorio con <code>git init</code>.</li>
+                <li>Agrega el archivo al área de preparación con <code>git add index.html styles.css script.js</code>.</li>
+                <li>Realiza un commit con <code>git commit -m "Agregar documento web básico"</code>.</li>
+                <li>Si tienes un repositorio remoto, agrégalo con <code>git remote add origin <URL-del-repositorio></code>.</li>
+                <li>Envía los cambios al repositorio remoto con <code>git push -u origin main</code>.</li>
+            </ol>
+        </section>
+    </main>
 </body>
 </html>
