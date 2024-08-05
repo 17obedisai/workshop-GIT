@@ -1,45 +1,62 @@
-/* Estilos básicos */
-body {
-    font-family: 'Arial', sans-serif;
+/* Estilos nuevos */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #ffffff;
+    font-family: 'SFPro', Arial, sans-serif;
 }
 
 header {
-    background-color: #4a4a4a;
-    color: #ffffff;
-    padding: 1.5em;
+    background-color: #ffffff;
     text-align: center;
+    padding: 1.5em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+#img {
+    width: 50%;
+    height: 50%;
+}
 header h1 {
-    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5d18dc;
+    letter-spacing: 3px;
+    margin-bottom: 0.5em;
 }
 
 main {
-    padding: 2em;
+    padding: 2em 6%;
 }
 
 section {
     margin-bottom: 2em;
-    padding: 1.5em;
+    padding: 2em;
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-    color: #444;
-    border-bottom: 2px solid #ddd;
+    color: #5d18dc;
+    border-bottom: 2px solid #5d18dc;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
+    font-size: 1.8em;
+    text-transform: uppercase;
 }
 
-p {
+p, ul li {
     line-height: 1.6;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    color: #000000;
 }
 
 ul {
@@ -49,7 +66,7 @@ ul {
 
 ul li {
     padding: 0.5em 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #5d18dc;
 }
 
 ul li:last-child {
@@ -57,12 +74,41 @@ ul li:last-child {
 }
 
 footer {
-    background-color: #4a4a4a;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     text-align: center;
     padding: 1em;
     position: fixed;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 700;
+    margin: 5px;
+    padding: 8px 8px;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.nav-list:hover {
+    letter-spacing: 3px;
+    background-color: #5d18dc;
+    color: #121212;
+    box-shadow: #5d18dc 0px 8px 25px 0px;
+}
+
+.nav-list:active {
+    letter-spacing: 2px;
+    background-color: #5d18dc;
+    color: #232323;
+    box-shadow: #5d18dc 0px 0px 0px 0px;
+    transform: translateY(4px);
+    transition: 120ms;
 }

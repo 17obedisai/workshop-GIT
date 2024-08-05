@@ -9,6 +9,7 @@
 <body>
     <header>
         <h1>Guía de Control de Versiones y GIT</h1>
+        <img id="img" src="Imagenes/logotipo-de-github.png" alt="">
     </header>
     <main>
         <section id="control-de-versiones">
@@ -58,33 +59,28 @@
                 <li><strong>mkdir:</strong> Crea un nuevo directorio.</li>
                 <li><strong>touch:</strong> Crea un nuevo archivo vacío o actualiza la fecha de modificación de un archivo existente.</li>
                 <li><strong>rm:</strong> Elimina archivos o directorios.</li>
-                <li><strong>cv:</strong> Comando ficticio para este ejemplo. Se utilizaría como <code>cv <nombre> <directorio></code>.</li>
+                <li><strong>cp:</strong> Copia archivos o directorios. Ejemplo: <code>cp archivo1.txt archivo2.txt</code> copia <code>archivo1.txt</code> a <code>archivo2.txt</code>.</li>
+                <li><strong>mv:</strong> Mueve o renombra archivos o directorios. Ejemplo: <code>mv archivo1.txt nuevo_directorio/</code> mueve <code>archivo1.txt</code> al directorio <code>nuevo_directorio</code>.</li>
             </ul>
         </section>
         <section id="git-comandos">
-            <h2>Listado de comandos de GIT</h2>
+            <h2>Listado de comandos de GIT usados en clase</h2>
             <ul>
                 <li><strong>git init:</strong> Inicializa un nuevo repositorio Git.</li>
-                <li><strong>git clone:</strong> Clona un repositorio remoto.</li>
                 <li><strong>git add:</strong> Añade archivos al área de preparación.</li>
                 <li><strong>git commit:</strong> Guarda los cambios en el historial de commits.</li>
                 <li><strong>git push:</strong> Envía los commits al repositorio remoto.</li>
                 <li><strong>git pull:</strong> Recupera y fusiona los cambios del repositorio remoto.</li>
                 <li><strong>git branch:</strong> Muestra, crea o elimina ramas.</li>
-                <li><strong>git merge:</strong> Fusiona ramas.</li>
                 <li><strong>git status:</strong> Muestra el estado de los archivos en el repositorio.</li>
+                <li><strong>git clone:</strong> Clona un repositorio remoto a tu máquina local.</li>
+                <li><strong>git remote add origin [URL]:</strong> Conecta tu repositorio local a un repositorio remoto.</li>
+                <li><strong>git config --global user.name "[nombre]":</strong> Configura tu nombre de usuario global.</li>
+                <li><strong>git config --global user.email "[email]":</strong> Configura tu correo electrónico global.</li>
+                <li><strong>git config --global credential.helper cache:</strong> Guarda tus credenciales temporalmente.</li>
+                <li><strong>git config --global credential.helper store:</strong> Guarda tus credenciales de forma permanente.</li>
+                <li><strong>git ls-remote [URL]:</strong> Verifica la conexión y las credenciales con el repositorio remoto.</li>
             </ul>
-        </section>
-        <section id="aplicar-git">
-            <h2>Aplicar GIT en este documento Web</h2>
-            <p>Para aplicar GIT en este documento web, sigue estos pasos:</p>
-            <ol>
-                <li>Inicializa un nuevo repositorio con <code>git init</code>.</li>
-                <li>Agrega el archivo al área de preparación con <code>git add index.html styles.css script.js</code>.</li>
-                <li>Realiza un commit con <code>git commit -m "Agregar documento web básico"</code>.</li>
-                <li>Si tienes un repositorio remoto, agrégalo con <code>git remote add origin <URL-del-repositorio></code>.</li>
-                <li>Envía los cambios al repositorio remoto con <code>git push -u origin main</code>.</li>
-            </ol>
         </section>
     </main>
 </body>
